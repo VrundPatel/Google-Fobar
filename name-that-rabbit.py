@@ -50,7 +50,12 @@ def answer(names):
     new_dictionary = {}
     list = []
     new_list = []
-    result_list = []
+    result = []
+
+    #keeping track of the total for each name in the dictionary
+    total = 0
+        for letter in name:
+            total += dict[letter]
 
     #returns the final result list with the sorted names
-    return result_list
+    return result
